@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".CommitMain" 
+    android:background="@drawable/comanback" >
+
+  	 <LinearLayout
+  	     android:layout_width="260dp"
+  	     android:layout_height="200dp"
+  	     android:layout_alignParentTop="true"
+  	     android:layout_centerHorizontal="true"
+  	     android:layout_marginTop="91dp"
+  	     android:background="@drawable/cback"
+  	     android:orientation="vertical" >
+
+  	     <TextView
+  	         android:id="@+id/dy"
+  	         android:layout_width="110dp"
+  	         android:layout_height="wrap_content"
+  	         android:paddingLeft="20dp"
+  	         android:paddingTop="10dp"
+  	         android:text="@string/did_you"
+  	         android:textColor="#b04b0c"
+  	         android:textSize="25sp" />
+
+  	     <TextView
+  	         android:id="@+id/ct"
+  	         android:layout_width="wrap_content"
+  	         android:maxWidth="210dp"
+  	         android:layout_height="wrap_content"
+  	         android:layout_marginLeft="20dp"
+  	         android:textColor="#000000"
+  	         android:textSize="24sp"
+  	         android:singleLine="true" />
+
+  	     <TextView
+  	         android:id="@+id/td"
+  	         android:layout_width="wrap_content"
+  	         android:layout_height="wrap_content"
+  	         android:paddingLeft="20dp"
+  	         android:paddingTop="10dp"
+  	         android:text="@string/today"
+  	         android:textColor="#b04b0c"
+  	         android:textSize="25sp" />
+
+  	     <LinearLayout
+  	         android:layout_width="250dp"
+  	         android:layout_height="100dp"
+  	         android:paddingLeft="20dp"
+  	         android:paddingTop="50dp" >
+
+  	         <TextView
+  	             android:id="@+id/edit"
+  	             android:layout_width="100dp"
+  	             android:layout_height="20dp"
+  	             android:paddingRight="50dp"
+  	             android:text="@string/edit"
+  	             android:textColor="#000000"
+  	             android:textSize="15sp" />
+
+  	         <TextView
+  	             android:id="@+id/details"
+  	             android:layout_width="130dp"
+  	             android:layout_height="20dp"
+  	             android:paddingLeft="75dp"
+  	             android:text="@string/details"
+  	             android:textColor="#000000"
+  	             android:textSize="15sp" />
+  	     </LinearLayout>
+  	 </LinearLayout>
+  	 
+  	 <ImageView
+  	     	 android:id="@+id/yesButton"
+             android:layout_width="120dp"
+             android:layout_height="120dp"
+             android:scaleType="centerInside"
+             android:layout_marginLeft="130dp"
+             android:layout_marginTop="220dp"
+             android:src="@drawable/yes"
+             android:contentDescription="@string/commit"
+             />
+
+  	 <TextView
+  	     android:id="@+id/dsrow"
+  	     android:layout_width="wrap_content"
+  	     android:layout_height="wrap_content"
+  	     android:layout_below="@+id/yesButton"
+  	     android:layout_centerHorizontal="true"
+  	     android:layout_marginTop="30dp"
+  	     android:text="@string/daysrow" 
+  	     android:textColor="#FFFFFF"
+  	     android:textSize="15sp"/>
+  	 
+  	 <HorizontalScrollView 
+  	     android:layout_width="fill_parent"
+  	     android:layout_height="40dp"
+  	     android:layout_marginTop="400dp">
+  	     <LinearLayout
+  	     android:id="@+id/day_tracker" 
+  	     android:layout_width="fill_parent"
+  	     android:layout_height="fill_parent"
+  	     android:orientation="horizontal">
+  	     <!--<TextView
+  	             android:layout_width="100dp"
+  	             android:layout_height="20dp"
+  	             android:paddingRight="50dp"
+  	             android:text="@string/edit"
+  	             android:textColor="#000000"
+  	             android:textSize="15sp" />-->
+  	     <!--<View 
+  	         android:id="@+id/didit"
+  	         android:layout_width="6dp"
+  	         android:layout_height="60dp"
+  	         android:layout_marginRight="0.5dp"
+  	         android:background="#9C7156"/>-->
+  	 </LinearLayout>
+  	     
+  	 </HorizontalScrollView>
+
+</RelativeLayout>

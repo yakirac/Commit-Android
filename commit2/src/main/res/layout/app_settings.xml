@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".CommitMain" 
+    android:background="@drawable/comanback" >
+
+  	 <LinearLayout
+  	     android:id="@+id/cdetails"
+  	     android:layout_width="260dp"
+  	     android:layout_height="280dp"
+  	     android:layout_alignParentTop="true"
+  	     android:layout_centerHorizontal="true"
+  	     android:layout_marginTop="71dp"
+  	     android:background="@drawable/cback"
+  	     android:orientation="vertical" >
+
+	    
+	    <TextView
+	          android:layout_width="210dp"
+	          android:layout_height="wrap_content"
+	          android:layout_marginTop="30dp"
+	          android:layout_marginLeft="20dp"
+	          android:text="@string/settings_text"
+	          android:textColor="#000000"
+	          android:textSize="15sp" />
+	    
+	    <TextView
+  	     android:id="@+id/noti"
+  	     android:layout_width="wrap_content"
+  	     android:layout_height="wrap_content"
+  	     android:layout_marginTop="30dp"
+  	     android:layout_marginLeft="100dp"
+  	     android:text="@string/notifications" 
+  	     android:textColor="#000000"
+  	     android:textSize="15sp"/>
+	    
+	    <Button 
+	        android:layout_width="200dp"
+	        android:layout_height="30dp"
+	        android:text="@string/clear_notifications"
+	        android:textColor="#FFFFFF"
+	        android:textSize="15sp"
+	        android:layout_marginTop="50dp"
+	        android:layout_marginLeft="25dp"
+	        android:background="@drawable/button_orange"/>
+
+	</LinearLayout>
+</RelativeLayout>
